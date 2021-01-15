@@ -1,6 +1,15 @@
 .infoBox{
     flex:1;
     border-radius: none;
+    cursor: pointer;
+}
+
+.infoBox--selector{
+    border-top:10px solid greenyellow;
+}
+
+.infoBox--red{
+    border-color: crimson;
 }
 
 .infoBox:not(:last-child){

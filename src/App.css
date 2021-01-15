@@ -24,6 +24,12 @@ body {
 	height: 5%;
 }
 
+.app_dropdown{
+	background-color: white;
+	border-radius: 10px;
+	border: none;
+}
+
 .app_stats {
 	display: flex;
 	justify-content: space-between;

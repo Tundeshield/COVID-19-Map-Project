@@ -29,7 +29,7 @@ export const sortData = (data) => {
 	return sortedData.sort((a, b) => (a.cases > b.cases ? -1 : 1));
 };
 // Draw circle on the map with interactive tooltip
-export const showDataOnMap = (data, casesType = "cases") =>
+export const showDataOnMap = (data, casesType) =>
 	data.map((country) => (
 		<Circle
 			center={[country.countryInfo.lat, country.countryInfo.long]}

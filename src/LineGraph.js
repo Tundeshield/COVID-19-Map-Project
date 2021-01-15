@@ -47,7 +47,7 @@ const options = {
 	},
 };
 
-function LineGraph({ casesType = "cases" }) {
+function LineGraph({ casesType  }) {
 	//https://disease.sh/v3/covid-19/historical/all?lastdays=
 
 	const [data, setData] = useState({});
@@ -70,7 +70,7 @@ function LineGraph({ casesType = "cases" }) {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=50")
+			await fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=120")
 				.then((response) => response.json())
 				.then((data) => {
 					console.log(data);
@@ -84,8 +84,6 @@ function LineGraph({ casesType = "cases" }) {
 
 	return (
 		<div>
-			<h3>Worldwide New Cases</h3>
-			<p>Cases in the past 50 days</p>
 			{data?.length > 0 && (
 				<Line
 					options={options}
