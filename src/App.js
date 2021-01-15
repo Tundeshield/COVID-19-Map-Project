@@ -8,7 +8,7 @@ import Table from "./Table";
 import { convertToFloat, formatted, sortData } from "./util";
 import LineGraph from "./LineGraph";
 import "leaflet/dist/leaflet.css";
-import logo from "./logo.png"
+import logo from "./logo.png";
 
 function App() {
 	const [countries, setCountries] = useState([]);
@@ -71,7 +71,7 @@ function App() {
 		<div className="app">
 			<div className="app_left">
 				<div className="app_header">
-					<img src={logo} alt="logo"/>
+					<img src={logo} alt="logo" />
 					<FormControl className="app_dropdown">
 						<Select
 							variant="outlined"
